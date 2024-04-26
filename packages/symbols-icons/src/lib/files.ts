@@ -518,7 +518,7 @@ export default [{
       "webpackfile.cts",
       "webpackfile.mts"
     ]
-  }
+  },
   {
     name: "zig",
     icon: "zig",
