@@ -44,5 +44,8 @@
   },
   "bugs": {
     "url": "https://github.com/sebastianjnuwu/acode-plugins/issues"
+  },
+  "dependencies": {
+    "postcss-preset-env": "^9.5.9"
   }
 }
