@@ -1,8 +1,6 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
     "allowJs": true,
     "outDir": "./build",
     "removeComments": true,
