@@ -45,6 +45,18 @@
     <td><img src="https://raw.githubusercontent.com/sebastianjnuwu/acode-plugins/acode/packages/symbols-icons/icons/files/bun.svg" alt="bun"/></td>
   </tr>
   <tr>
+    <td>dts</td>
+    <td><img src="https://raw.githubusercontent.com/sebastianjnuwu/acode-plugins/acode/packages/symbols-icons/icons/files/dts.svg" alt="dts"/></td>
+  </tr>
+  <tr>
+    <td>font</td>
+    <td><img src="https://raw.githubusercontent.com/sebastianjnuwu/acode-plugins/acode/packages/symbols-icons/icons/files/font.svg" alt="font"/></td>
+  </tr>
+  <tr>
+    <td>git</td>
+    <td><img src="https://raw.githubusercontent.com/sebastianjnuwu/acode-plugins/acode/packages/symbols-icons/icons/files/git.svg" alt="git"/></td>
+  </tr>
+  <tr>
     <td>html</td>
     <td><img src="https://raw.githubusercontent.com/sebastianjnuwu/acode-plugins/acode/packages/symbols-icons/icons/files/code-orange.svg" alt="html"/></td>
   </tr>
@@ -93,6 +105,11 @@
     <td><img src="https://raw.githubusercontent.com/sebastianjnuwu/acode-plugins/acode/packages/symbols-icons/icons/files/svg.svg" alt="svg"/></td>
   </tr>
   <tr>
+  <tr>
+    <td>svelte</td>
+    <td><img src="https://raw.githubusercontent.com/sebastianjnuwu/acode-plugins/acode/packages/symbols-icons/icons/files/svelte.svg" alt="svelte"/></td>
+  </tr>
+  <tr>
     <td>ts-test</td>
     <td><img src="https://raw.githubusercontent.com/sebastianjnuwu/acode-plugins/acode/packages/symbols-icons/icons/files/ts-test.svg" alt="ts-test"/></td>
   </tr>
@@ -107,6 +124,10 @@
   <tr>
     <td>webpack</td>
     <td><img src="https://raw.githubusercontent.com/sebastianjnuwu/acode-plugins/acode/packages/symbols-icons/icons/files/webpack.svg" alt="webpack"/></td>
+  </tr>
+  <tr>
+    <td>zig</td>
+    <td><img src="https://raw.githubusercontent.com/sebastianjnuwu/acode-plugins/acode/packages/symbols-icons/icons/files/zig.svg" alt="zig"/></td>
   </tr>
 </table>
 

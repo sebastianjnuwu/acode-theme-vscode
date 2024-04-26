@@ -1,21 +1,20 @@
-export default [
- {
+export default [{
   name: "astro",
   icon: "astro",
   file_name: [
-      "astro.config.js",
-      "astro.config.mjs",
-      "astro.config.cjs",
-      "astro.config.ts",
-      "astro.config.cts",
-      "astro.config.mts"
-    ],
+    "astro.config.js",
+    "astro.config.mjs",
+    "astro.config.cjs",
+    "astro.config.ts",
+    "astro.config.cts",
+    "astro.config.mts"
+  ],
   extension: ["astro"]
- },
- {
-  name: "babel",
-  icon: "babel",
-  file_name: [
+},
+  {
+    name: "babel",
+    icon: "babel",
+    file_name: [
       ".babelrc",
       ".babelrc.cjs",
       ".babelrc.js",
@@ -33,99 +32,149 @@ export default [
       ".babel-plugin-macrosrc.js",
       "babel-plugin-macros.config.js"
     ]
- },
- {
-  name: "biome",
-  icon: "biome",
-  file_name: ["biome.json"]
- },
- {
-  name: "bun",
-  icon: "bun",
-  file_name: ["bun.lockb", "bunfig.toml"]
- },
- {
-  name: "dts",
-  icon: "dts",
-  extension: ['d.ts']
- },
- {
-  name: "html",
-  icon: "code-orange",
-  extension: ["html", "xhtml", "htm", "asp"]
-},
- {
-  name: "img",
-  icon: "image",
-  extension: [
-"png",
-"jpeg",
-"jpg",
-"gif",
-"ico",
-"tif",
-"tiff",
-"psd",
-"psb",
-"ami",
-"apx",
-"avif",
-"bmp",
-"bpg",
-"brk",
-"cur",
-"dds",
-"dng",
-"exr",
-"fpx",
-"gbr",
-"img",
-"jbig2",
-"jb2",
-"jng",
-"jxr",
-"pgf",
-"pic",
-"raw",
-"webp",
-"eps",
-"afphoto",
-"ase",
-"aseprite",
-"clip",
-"cpt",
-"heif",
-"heic",
-"kra",
-"mdp",
-"ora",
-"pdn",
-"reb",
-"sai",
-"tga",
-"xcf",
-"jfif",
-"ppm",
-"pbm",
-"pgm",
-"pnm",
-"icns"
- ]
-},
- {
-  name: "js_test",
-  icon: "js-test",
-  file_name: ["test.js", "spec.js"]
-},
- {
-  name: "js",
-  icon: "js",
-  extension: ["js"]
-},
- {
-  name: "license",
-  icon: "license",
-  file_name: [
+  },
+  {
+    name: "biome",
+    icon: "biome",
+    file_name: ["biome.json"]
+  },
+  {
+    name: "bun",
+    icon: "bun",
+    file_name: ["bun.lockb",
+      "bunfig.toml"]
+  },
+  {
+    name: "dts",
+    icon: "dts",
+    extension: ['d.ts']
+  },
+  {
+    name: "font",
+    icon: "font",
+    extension: [
+        'woff',
+        'woff2',
+        'ttf',
+        'eot',
+        'suit',
+        'otf',
+        'bmap',
+        'fnt',
+        'odttf',
+        'ttc',
+        'font',
+        'fonts',
+        'sui',
+        'ntf',
+        'mrf',
+      ],
+  },
+  {
+    name: "git",
+    icon: "git",
+    file_name: [
+      '.git',
+      '.gitignore',
+      '.gitmessage',
+      '.gitignore-global',
+      '.gitignore_global',
+      '.gitattributes',
+      '.gitattributes-global',
+      '.gitattributes_global',
+      '.gitconfig',
+      '.gitmodules',
+      '.gitkeep',
+      '.keep',
+      '.gitpreserve',
+      '.gitinclude',
+      '.git-blame-ignore',
+      '.git-blame-ignore-revs',
+      '.git-for-windows-updater',
+      'git-history',
+    ],
+  },
+  {
+    name: "html",
+    icon: "code-orange",
+    extension: ["html",
+      "xhtml",
+      "htm",
+      "asp"]
+  },
+  {
+    name: "img",
+    icon: "image",
+    extension: [
+      "png",
+      "jpeg",
+      "jpg",
+      "gif",
+      "ico",
+      "tif",
+      "tiff",
+      "psd",
+      "psb",
+      "ami",
+      "apx",
+      "avif",
+      "bmp",
+      "bpg",
+      "brk",
+      "cur",
+      "dds",
+      "dng",
+      "exr",
+      "fpx",
+      "gbr",
+      "img",
+      "jbig2",
+      "jb2",
+      "jng",
+      "jxr",
+      "pgf",
+      "pic",
+      "raw",
+      "webp",
+      "eps",
+      "afphoto",
+      "ase",
+      "aseprite",
+      "clip",
+      "cpt",
+      "heif",
+      "heic",
+      "kra",
+      "mdp",
+      "ora",
+      "pdn",
+      "reb",
+      "sai",
+      "tga",
+      "xcf",
+      "jfif",
+      "ppm",
+      "pbm",
+      "pgm",
+      "pnm",
+      "icns"
+    ]
+  },
+  {
+    name: "js_test",
+    icon: "js-test",
+    file_name: ["test.js",
+      "spec.js"]
+  },
+  {
+    name: "js",
+    icon: "js",
+    extension: ["js"]
+  },
+  {
+    name: "license",
+    icon: "license",
+    file_name: [
       "copying",
       "copying.md",
       "copying.rst",
@@ -155,26 +204,33 @@ export default [
       "licence.rst",
       "licence.txt"
     ]
-},
- {
-  name: "markdown",
-  icon: "markdown",
-  extension: ["md", "markdown", "rst"]
-},
- {
-  name: "nodejs",
-  icon: "node",
-  file_name: ["package.json", "package-lock.json", ".nvmrc",".esmrc", ".node-version"]
-},
- {
-  name: "npm",
-  icon: "npm",
-  file_name: [".npmignore", ".npmrc"]
-},
- {
-  name: "postcss",
-  icon: "postcss",
-  file_name: [
+  },
+  {
+    name: "markdown",
+    icon: "markdown",
+    extension: ["md",
+      "markdown",
+      "rst"]
+  },
+  {
+    name: "nodejs",
+    icon: "node",
+    file_name: ["package.json",
+      "package-lock.json",
+      ".nvmrc",
+      ".esmrc",
+      ".node-version"]
+  },
+  {
+    name: "npm",
+    icon: "npm",
+    file_name: [".npmignore",
+      ".npmrc"]
+  },
+  {
+    name: "postcss",
+    icon: "postcss",
+    file_name: [
       "postcss.config.js",
       "postcss.config.cjs",
       "postcss.config.ts",
@@ -188,12 +244,13 @@ export default [
       ".postcssrc.yaml",
       ".postcssrc.yml"
     ],
-  extension:  ["pcss", "sss"]
-},
- {
-  name: "prettier",
-  icon: "prettier",
-  file_name: [
+    extension: ["pcss",
+      "sss"]
+  },
+  {
+    name: "prettier",
+    icon: "prettier",
+    file_name: [
       ".prettierrc",
       "prettier.config.js",
       "prettier.config.cjs",
@@ -206,21 +263,29 @@ export default [
       ".prettierignore",
       ".prettierrc.toml"
     ],
-},
- {
-  name: "sass",
-  icon: "sass",
-  extension: ["sass", "scss"]
-},
- {
-  name: "svg",
-  icon: "svg",
-  file_name: ["svg"]
-},
- {
-  name: "ts-test",
-  icon: "ts-test",
-  file_name: [
+  },
+  {
+    name: "sass",
+    icon: "sass",
+    extension: ["sass",
+      "scss"]
+  },
+  {
+    name: "svg",
+    icon: "svg",
+    file_name: ["svg"]
+  },
+  {
+    name: "svelte",
+    icon: "svelte",
+    file_name: ['svelte.config.js',
+      'svelte.config.cjs'],
+    extension: ['svelte']
+  },
+  {
+    name: "ts-test",
+    icon: "ts-test",
+    file_name: [
       "spec.ts",
       "spec.cts",
       "spec.mts",
@@ -235,16 +300,16 @@ export default [
       "spec-d.ts",
       "test-d.ts"
     ]
-},
- {
-  name: "ts",
-  icon: "ts",
-  extension: ["ts"]
-},
- {
-  name: "tsconfig",
-  icon: "tsconfig",
-  file_name: [
+  },
+  {
+    name: "ts",
+    icon: "ts",
+    extension: ["ts"]
+  },
+  {
+    name: "tsconfig",
+    icon: "tsconfig",
+    file_name: [
       "tsconfig.json",
       "tsconfig.app.json",
       "tsconfig.editor.json",
@@ -270,11 +335,11 @@ export default [
       "tsconfig.main.json",
       "tsconfig.renderer.json"
     ]
-},
- {
-  name: "webpack",
-  icon: "webpack",
-  file_name:  [
+  },
+  {
+    name: "webpack",
+    icon: "webpack",
+    file_name: [
       "webpack.js",
       "webpack.cjs",
       "webpack.mjs",
@@ -453,4 +518,10 @@ export default [
       "webpackfile.cts",
       "webpackfile.mts"
     ]
-}];
+  }
+  {
+    name: "zig",
+    icon: "zig",
+    file_name: ['zig', 'zon']
+  }
+  ];
