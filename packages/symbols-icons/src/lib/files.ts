@@ -264,6 +264,11 @@ export default [{
       ".prettierrc.toml"
     ],
   },
+    {
+    name: "robot",
+    icon: "robot",
+    file_name: ["robots.txt"]
+  },
   {
     name: "sass",
     icon: "sass",

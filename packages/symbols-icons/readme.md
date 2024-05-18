@@ -5,7 +5,7 @@
 
 <div align="center"> 
   <img src="https://img.shields.io/badge/License-Apache%202.0-black.svg"/>
-  <img src="https://img.shields.io/badge/Version-v1.0.1-black"/>
+  <img src="https://img.shields.io/badge/Version-v1.0.3-black"/>
 </div>
 
 <h2>• Icon Previews</h2>
@@ -95,6 +95,10 @@
   <tr>
     <td>prettier</td>
     <td><img src="https://raw.githubusercontent.com/sebastianjnuwu/acode-plugins/acode/packages/symbols-icons/icons/files/prettier.svg" alt="prettier"/></td>
+  </tr>
+  <tr>
+    <td>robot</td>
+    <td><img src="https://raw.githubusercontent.com/sebastianjnuwu/acode-plugins/acode/packages/symbols-icons/icons/files/robot.svg" alt="robot"/></td>
   </tr>
   <tr>
     <td>sass</td>
