@@ -1,10 +1,10 @@
 {
   "id": "sebastianjnuwu.theme.vscode",
-  "name": "Acode Purple Theme",
-  "main": "dist/main.js",
-  "version": "1.1.4",
+  "name": "Acode Purple (theme)",
+  "main": "build/main.js",
+  "version": "1.1.5",
   "readme": "readme.md",
-  "minVersionCode": 289,
+  "minVersionCode": 280,
   "icon": "icon.png",
   "files": [],
   "author": {
