@@ -1,11 +1,15 @@
 [{
-  "name": "folder-src",
-  "folder_name": ["src",
-    "srcs",
-    "source",
-    "sources",
-    "code"]
+  "name": "folder-xml",
+  "folder_name": ["xml"]
 },
+  {
+    "name": "folder-src",
+    "folder_name": ["src",
+      "srcs",
+      "source",
+      "sources",
+      "code"]
+  },
   {
     "name": "folder-dist",
     "folder_name": ["dist",
