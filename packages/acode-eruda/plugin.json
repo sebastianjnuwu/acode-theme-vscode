@@ -1,0 +1,15 @@
+{
+  "id": "sebastianjnuwu.acode.eruda",
+  "name": "Eruda Acode",
+  "main": "build/main.js",
+  "version": "1.0.2",
+  "readme": "readme.md",
+  "minVersionCode": 0,
+  "icon": "icon.svg",
+  "files": [],
+  "author": {
+    "name": "sebastianjnuwu",
+    "email": "sebastianjnuwu@gmail.com",
+    "github": "sebastianjnuwu"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "acode-plugin-eruda",
+  "version": "1.0.2",
+  "type": "module",
+  "license": "Apache-2.0",
+  "author": "sebastianjnuwu <sebastianjnuwu@gmail.com>",
+  "keywords": [],
+	"scripts": {
+		"zip": "node .acode/build.js",
+		"build": "webpack",
+		"release": "webpack --mode production",
+		"prettier": "prettier --write ."
+	},
+  "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.18.13",
+    "@babel/plugin-transform-runtime": "^7.19.6",
+    "@babel/preset-env": "^7.18.10",
+    "autoprefixer": "^10.4.14",
+    "babel-loader": "^9.1.0",
+    "colors": "^1.4.0",
+    "eruda": "^3.4.1",
+    "html-tag-js": "^1.1.22",
+    "jszip": "^3.10.1",
+    "prettier": "^2.8.4",
+    "raw-loader": "^4.0.2",
+    "webpack": "^5.76.0",
+    "webpack-cli": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sebastianjnuwu/acode-plugins"
+  },
+  "bugs": {
+    "url": "https://github.com/sebastianjnuwu/acode-plugins/issues"
+  }
+}
