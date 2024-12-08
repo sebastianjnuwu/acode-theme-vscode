@@ -1,20 +1,20 @@
 import plugin from '../plugin.json';
-import style from './styles/style.scss';
-import css from './styles/materialize.min.css';
+import style from './modules/style.scss';
+import css from './modules/materialize.min.css';
 
 class materialize {
   
   async get_style() {
+   
+    const regex = /\.(?!\d)([\w-]+)/g;
+    const Class = new Set();
+    let match;
   
-   const regex = /\.(?!\d)([\w-]+)/g;
-   const Class = new Set();
-   let match;
-  
-   while ((match = regex.exec(css))) {
+    while ((match = regex.exec(css))) {
      Class.add(match[1]);
    };
-
-   return Array.from(Class);
+    return Array.from(Class);
+   
   };
 
   async completion(_class) {

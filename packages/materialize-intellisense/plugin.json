@@ -2,7 +2,7 @@
   "id": "sebastianjnuwu.materializecss.intellisense",
   "name": "Materialize IntelliSense",
   "main": "build/main.js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "readme": "readme.md",
   "minVersionCode": 289,
   "icon": "icon.png",
