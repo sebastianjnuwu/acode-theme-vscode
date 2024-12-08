@@ -11,7 +11,3 @@
 
   <b>Browser Console, Network, Inspect Dom Elements</b>
 </div>
-
-<div align="center"> 
- <img src="" style="border-radius: 20px;" width="90%%" />
-</div>
