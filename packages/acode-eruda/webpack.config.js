@@ -35,7 +35,9 @@ const main = (env, options) => {
 				}
 			],
 		},
-		plugins: [],
+		plugins: [{
+				apply: build,
+			}],
 	};
 };
 

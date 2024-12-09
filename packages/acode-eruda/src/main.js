@@ -1,3 +1,4 @@
+import './eruda.js';
 import plugin from '../plugin.json';
 const app = acode.require('settings');
 
@@ -13,7 +14,7 @@ class AcodeEruda {
 
   async init() {
     if (!this.settings.enable) return;
-    import('eruda').then(eruda => eruda.default.init());
+    eruda.init();
   };
 
   get setting() {
@@ -30,9 +31,9 @@ class AcodeEruda {
         this.settings[key] = value;
         app.update();
         if (this.settings.enable) {
-          import('eruda').then(eruda => eruda.default.init());
+          eruda.init();
         } else {
-          import('eruda').then(eruda => eruda.default.destroy());
+          eruda.destroy();
         }
       },
     };
@@ -43,7 +44,7 @@ class AcodeEruda {
   };
 
   async destroy() {
-    import('eruda').then(eruda => eruda.default.destroy());
+    eruda.destroy();
     delete app.value[plugin.id];
     app.update(false);
   };
