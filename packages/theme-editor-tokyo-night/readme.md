@@ -1,22 +1,23 @@
 <div align="center">
-<h1>Tokyo Night (Editor Theme)</h1>
-</div>
+ <img alt="profile" src="https://raw.githubusercontent.com/sebastianjnuwu/acode-plugins/acode/packages/theme-editor-tokyo-night/icon.png" width="55%" />
+ 
+ <h1>Tokyo Night (Editor Theme)</h1>
 
-<div align="center"> 
- <img alt="profile" src="https://cdn.discordapp.com/attachments/1128027443245105184/1160330040941219870/icon.png" width="60%" />
-
+<img alt="License" src="https://img.shields.io/badge/License-Apache%202.0-purple.svg"/>
+<img alt="Version" src="https://img.shields.io/badge/Latest%20version-V1.2.1-purple"/>
+  
 <p>"Discover the nocturnal realm with the <strong>'Tokyo Night'</strong> theme for your editor. Unleash your creativity and code with comfort, no matter where you are. Master the craft of programming with sophistication and practicality. 🌃🌸"</p>
 
 </div>
 
-<div align="center"> 
-<img src="https://cdn.discordapp.com/attachments/1128027443245105184/1160327994712264824/Screenshot_20231007-1827392.jpg" style="border-radius: 20px;" width="90%%" />
+<hr>
+<strong style="color: purple">• Sponsor:</strong> Become a subscriber click [here!](https://github.com/sponsors/sebastianjnuwu)
+
+<strong style="color: purple">• Open source:</strong> More security, click [here.](https://github.com/sebastianjnuwu/acode-plugins/tree/acode/packages/theme-editor-tokyo-night)
+
+<strong style="color: purple">• GitHub:</strong> Follow me [here.](https://github.com/sebastianjnuwu)
+
+<div align="center">
+ <a href='https://ko-fi.com/Z8Z6BKCU0' target='_blank'>
+  <img height='36' style='border: 8px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi4.png?v=6' border='0' /></a>
 </div>
-
-<strong>Open source:</strong> Want to see the code? click <a href="https://github.com/sebastianjnuwu/acode-plugins/tree/acode/plugin/acode-theme-editor-tokyo-night">here</a> and don't forget the little star!
-
-<strong>Report bugs:</strong> Found bugs? Report now by clicking <a href="https://github.com/sebastianjnuwu/acode-plugins/issues">here!</a><br>
-
-<strong>Sponsor:</strong> Support this project by clicking [here](https://github.com/sponsors/sebastianjnuwu), this is how the developer works
-
-<strong>Pull request:</strong> Do you think something can improve? come contribute click <a href="https://github.com/sebastianjnuwu/acode-plugins/pulls">here!</a> 

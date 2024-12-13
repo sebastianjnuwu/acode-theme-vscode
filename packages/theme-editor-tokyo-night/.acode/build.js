@@ -6,7 +6,7 @@ const zip = new jszip();
 
 const icon = path.join('./icon.png');
 const json = path.join('./plugin.json');
-const folder = path.join('./dist');
+const folder = path.join('./build');
 let readme = path.join('./readme.md');
 
 if (!fs.existsSync(readme)) {

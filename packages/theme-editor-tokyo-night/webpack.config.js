@@ -17,7 +17,7 @@ const main = (env, options) => {
     mode: options.mode || 'development',
     entry: { main: './src/main.js' },
     output: {
-      path: path.resolve('./', 'dist'),
+      path: path.resolve('./', 'build'),
       filename: '[name].js',
       chunkFilename: '[name].js',
     },

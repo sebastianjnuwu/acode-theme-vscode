@@ -1,8 +1,8 @@
 {
   "id": "sebastianjnuwu.theme.tokyo",
   "name": "Tokyo Night (Editor Theme)",
-  "main": "dist/main.js",
-  "version": "1.0.2",
+  "main": "build/main.js",
+  "version": "1.0.3",
   "readme": "readme.md",
   "minVersionCode": 289,
   "icon": "icon.png",
