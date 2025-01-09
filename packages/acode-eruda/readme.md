@@ -1,16 +1,27 @@
 <div align="center">
+  <!-- Title -->
   <h1>Eruda Acode</h1>
-  <img src="https://raw.githubusercontent.com/sebastianjnuwu/acode-plugins/acode/packages/acode-eruda/icon.png" width="40%" />
+  
+  <!-- Clickable Icon Image -->
+  <a href="https://acode.app/plugin/sebastianjnuwu.acode.eruda" target="_blank">
+    <img src="https://raw.githubusercontent.com/sebastianjnuwu/acode-plugins/acode/packages/acode-eruda/icon.png" width="40%" alt="Eruda Acode Icon"/>
+  </a>
   <br><br>
   
-  <!-- Badges for License and Version -->
-  <img alt="License" src="https://img.shields.io/badge/License-Apache%202.0-0000FF.svg"/>
-  <img alt="Version" src="https://img.shields.io/badge/Latest%20version-v1.0.3-0000FF"/>
+  <!-- Clickable Badges for License and Version -->
+  <p>
+    <a href="https://github.com/sebastianjnuwu/acode-plugins/blob/acode/LICENSE" target="_blank">
+      <img src="https://img.shields.io/badge/License-Apache%202.0-0000FF.svg?logo=apache" alt="License Badge"/>
+    </a>
+    <a href="https://github.com/sebastianjnuwu/acode-plugins/blob/acode/packages/acode-eruda/package.json#L4" target="_blank">
+      <img src="https://img.shields.io/badge/Version-v1.0.4-0000FF?logo=github" alt="Version Badge"/>
+    </a>
+  </p>
   
   <br>
   
   <!-- Project Description -->
-  <p><b>Eruda Acode</b> is a powerful tool for developers that provides an interface to inspect the browser console, monitor network requests, and analyze DOM elements in an efficient way.</p>
+  <p><b>Eruda Acode</b> is a powerful tool for developers that provides an interface to inspect the browser console, monitor network requests, and analyze DOM elements efficiently.</p>
   
   <p><i>With Eruda Acode, you can:</i></p>
   <ul>
@@ -22,5 +33,15 @@
   <p>This tool is perfect for developers who need a quick and intuitive solution for debugging and testing web pages.</p>
 
   <!-- Screenshot of Eruda -->
-  <img src="https://camo.githubusercontent.com/d0f6d8eb7aa3c04da21dde1b137049ad3439a7ca17bac6628aa4166a42551dba/68747470733a2f2f65727564612e6c6972696c6972692e696f2f73637265656e73686f742e6a7067" width="80%" />
+  <img src="https://camo.githubusercontent.com/d0f6d8eb7aa3c04da21dde1b137049ad3439a7ca17bac6628aa4166a42551dba/68747470733a2f2f65727564612e6c6972696c6972692e696f2f73637265656e73686f742e6a7067" width="80%" alt="Screenshot of Eruda Acode"/>
+
+  <br><br>
+
+  <!-- Sponsor Section -->
+  <p><strong style="color: #0000FF">• Sponsor:</strong> Support this project by clicking <a href="https://github.com/sponsors/sebastianjnuwu" target="_blank" style="color: #0000FF;">here</a>.</p>
+
+
+  <!-- Open Source Section -->
+  <p><strong style="color: #0000FF">• Open Source:</strong> Click <a href="https://github.com/sebastianjnuwu/acode-plugins/tree/acode/packages/acode-eruda" target="_blank" style="color: #0000FF;">here</a>!</p>
+  
 </div>

@@ -2,40 +2,48 @@ import path from "node:path";
 import colors from "colors";
 import fs from "node:fs";
 import jszip from "jszip";
+import { performance } from "node:perf_hooks";
 
 const zip = new jszip();
 
 /**
- * Path to the plugin assets and directories.
+ * Paths
  */
 const iconPath = path.join("./icon.png");
 const jsonPath = path.join("./plugin.json");
-const buildFolder = path.join("./build");
+const buildFolder = path.join("./.acode/build");
+const zipOutput = path.join("./.acode/plugin.zip");
 let readmePath = path.join("./readme.md");
 
-// Check for the existence of the readme.md file
 if (!fs.existsSync(readmePath)) {
   readmePath = path.join("./README.md");
 }
 
 /**
- * Adds essential files (icon, plugin.json, readme) to the ZIP archive.
+ * Adiciona arquivos essenciais ao ZIP.
  */
-zip.file("icon.png", fs.readFileSync(iconPath));
-zip.file("plugin.json", fs.readFileSync(jsonPath));
-zip.file("readme.md", fs.readFileSync(readmePath));
+try {
+  zip.file("icon.png", fs.readFileSync(iconPath));
+  zip.file("plugin.json", fs.readFileSync(jsonPath));
+  zip.file("readme.md", fs.readFileSync(readmePath));
+  console.log(colors.green("• Essential files added to the ZIP."));
+} catch (err) {
+  console.error(colors.red(`• Error adding essential files: ${err.message}`));
+  process.exit(1);
+}
 
 /**
- * Loads all files from the build folder into the ZIP archive, skipping LICENSE.txt files.
- * @param {string} root - The root path of the current folder being processed.
- * @param {string} folder - The path of the folder being processed.
+ * Lê arquivos do diretório build.
  */
 async function loadFile(root, folder) {
+  if (!fs.existsSync(folder)) {
+    console.error(colors.red(`• Build folder does not exist: ${folder}`));
+    process.exit(1);
+  }
+
   try {
     const distFiles = fs.readdirSync(folder);
-    console.log(
-      `[${getTimestamp()}] ${colors.cyan("• ")}Reading files from: ${folder}`,
-    );
+    console.log(colors.cyan(`• Reading files from folder: ${folder}`));
 
     for (const file of distFiles) {
       const filePath = path.join(folder, file);
@@ -47,60 +55,40 @@ async function loadFile(root, folder) {
         continue;
       }
 
-      // Skip LICENSE.txt files
-      if (!/LICENSE.txt/.test(file)) {
-        zip.file(path.join(root, file), fs.readFileSync(filePath));
-        console.log(
-          `[${getTimestamp()}] ${colors.green("• ")}Added file: ${path.join(root, file)}`,
-        );
-      } else {
-        console.warn(
-          `[${getTimestamp()}] ${colors.yellow("• ")}Skipped file: ${path.join(root, file)} (LICENSE.txt)`,
-        );
-      }
+      zip.file(path.join(root, file), fs.readFileSync(filePath));
+      console.log(colors.green(`• File added: ${filePath} (${stat.size} bytes)`));
     }
   } catch (err) {
-    console.error(
-      `[${getTimestamp()}] ${colors.red("• Error: ")}Failed to read or load files from ${folder}. Error: ${err.message}`,
-    );
-    console.error(err.stack); // Include stack trace for debugging
+    console.error(colors.red(`• Error reading files: ${err.message}`));
+    process.exit(1);
   }
 }
 
 /**
- * Generates a timestamp in the format [HH:MM:SS] for logging purposes.
- * @returns {string} The formatted timestamp.
+ * Gera o arquivo ZIP.
  */
-function getTimestamp() {
-  const now = new Date();
-  return now.toISOString().split("T")[1].split(".")[0];
-}
+(async () => {
+  console.time("Total process time");
+  const startTime = performance.now();
 
-// Load files from the build folder
-try {
-  console.log(
-    `[${getTimestamp()}] ${colors.brightBlue("• Starting to load files from the build directory...")}`,
-  );
-  loadFile("", buildFolder);
+  try {
+    console.log(colors.blue("• Starting to load files..."));
+    await loadFile("", buildFolder);
 
-  // Create the plugin.zip file and notify the user on completion
-  zip
-    .generateNodeStream({ type: "nodebuffer", streamFiles: true })
-    .pipe(fs.createWriteStream(path.join("./plugin.zip")))
-    .on("finish", () => {
-      console.log(
-        `[${getTimestamp()}] ${colors.brightGreen("• ")}Plugin successfully compiled for Acode.`,
-      );
-    })
-    .on("error", (err) => {
-      console.error(
-        `[${getTimestamp()}] ${colors.red("• Error: ")}Failed to generate plugin zip. Error: ${err.message}`,
-      );
-      console.error(err.stack); // Include stack trace for debugging
-    });
-} catch (err) {
-  console.error(
-    `[${getTimestamp()}] ${colors.red("• Error: ")}An unexpected error occurred during the file compilation process. Error: ${err.message}`,
-  );
-  console.error(err.stack); // Include stack trace for debugging
-}
+    zip
+      .generateNodeStream({ type: "nodebuffer", streamFiles: true })
+      .pipe(fs.createWriteStream(zipOutput))
+      .on("finish", () => {
+        const endTime = performance.now();
+        console.log(colors.brightGreen(`• ZIP file created at: ${zipOutput}`));
+        console.log(colors.green(`• Total time: ${(endTime - startTime) / 1000} seconds.`));
+        console.timeEnd("Total process time");
+      })
+      .on("error", (err) => {
+        console.error(colors.red(`• Error writing ZIP: ${err.message}`));
+      });
+  } catch (err) {
+    console.error(colors.red(`• Unexpected error: ${err.message}`));
+    process.exit(1);
+  }
+})();

@@ -12,10 +12,10 @@ const build = (bash) => {
 const main = (env, options) => {
   return {
     target: "node",
-    mode: options.mode || "development",
+    mode: options.mode || "production",
     entry: { main: "./src/main.js" },
     output: {
-      path: path.resolve("./", "build"),
+      path: path.resolve("./.acode", "build"),
       filename: "[name].js",
       chunkFilename: "[name].js",
     },
@@ -40,7 +40,12 @@ const main = (env, options) => {
         apply: build,
       },
     ],
-  };
+    stats: {
+    all: false,
+    errors: true,
+    warnings: false,
+  },
+  }
 };
 
 export default main;

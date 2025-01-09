@@ -1,12 +1,15 @@
 {
   "id": "sebastianjnuwu.acode.eruda",
-  "name": "Eruda Acode",
+  "name": "Eruda",
   "main": "build/main.js",
-  "version": "1.0.3",
+  "version": "1.0.4",
+  "license": "Apache-2.0",
   "readme": "readme.md",
-  "minVersionCode": 0,
+  "minVersionCode": 260,
   "icon": "icon.svg",
   "files": [],
+  "keywords": ["eruda", "console", "browser"],
+  "contributors": [],
   "author": {
     "name": "sebastianjnuwu",
     "email": "sebastianjnuwu@gmail.com",
