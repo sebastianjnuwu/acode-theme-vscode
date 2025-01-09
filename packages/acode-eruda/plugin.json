@@ -2,7 +2,7 @@
   "id": "sebastianjnuwu.acode.eruda",
   "name": "Eruda Acode",
   "main": "build/main.js",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "readme": "readme.md",
   "minVersionCode": 0,
   "icon": "icon.svg",
