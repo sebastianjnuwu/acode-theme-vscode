@@ -7,6 +7,8 @@
   "minVersionCode": 289,
   "icon": "icon.png",
   "files": [],
+  "keywords": ["bulma", "css", "intellisense"],
+  "contributors": [],
   "author": {
     "name": "sebastianjnuwu",
     "email": "sebastianjnuwu@gmail.com",

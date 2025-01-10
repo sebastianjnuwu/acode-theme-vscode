@@ -71,8 +71,10 @@ class bulma {
 
 if (window.acode) {
 
-  acode.setPluginInit(plugin.id, () => new bulma().init());
+  const Instance = new bulma();
   
-  acode.setPluginUnmount(plugin.id, () => new bulma().destroy());
+  acode.setPluginInit(plugin.id, () => Instance.init());
+  
+  acode.setPluginUnmount(plugin.id, () => Instance.destroy());
 
 };
