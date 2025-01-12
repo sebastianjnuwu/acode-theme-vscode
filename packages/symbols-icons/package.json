@@ -1,19 +1,23 @@
 {
   "name": "symbols-icons",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "type": "module",
   "license": "Apache-2.0",
   "author": "sebastianjnuwu <sebastianjnuwu@gmail.com>",
-  "scripts": {
-    "zip": "node .acode/zip.js",
-    "prettier": "prettier --write .",
-    "build": "webpack --mode development",
-    "release": "webpack --mode production"
+  "scripts": { 
+    "dev": "webpack serve",
+    "build": "webpack --mode production",
+    "publish": "node .acode/publish.js",
+    "lint": "npx @biomejs/biome lint --write",
+    "format": "npx @biomejs/biome format --write"
   },
   "devDependencies": {
     "@babel/cli": "^7.18.10",
     "@babel/core": "^7.18.13",
     "@babel/plugin-transform-runtime": "^7.19.6",
+    "axios": "^1.7.9",
+    "webpack-dev-server": "^5.2.0",
+    "@biomejs/biome": "^1.9.4",
     "@babel/preset-env": "^7.18.10",
     "@types/node": "^22.0.0",
     "babel-loader": "^9.1.0",

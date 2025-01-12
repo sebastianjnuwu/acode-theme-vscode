@@ -1,11 +1,11 @@
 <div align="center">
  <h1>Symbols Icons</h1>
  <img src="https://raw.githubusercontent.com/sebastianjnuwu/acode-plugins/acode/packages/symbols-icons/icon.png" width="60%" />
-</div>
+</div><br>
 
 <div align="center"> 
-  <img src="https://img.shields.io/badge/License-Apache%202.0-black.svg"/>
-  <img src="https://img.shields.io/badge/Version-v1.0.3-black"/>
+  <img src="https://img.shields.io/badge/License-Apache%202.0-black.svg?logo=apache"/>
+  <img src="https://img.shields.io/badge/Version-v1.0.4-black?logo=github"/>
 </div>
 
 <h2>• Icon Previews</h2>
