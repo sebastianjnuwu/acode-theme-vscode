@@ -7,9 +7,8 @@
 
 <h1>Acode Purple Theme</h1>
 
-  <img alt="License" src="https://img.shields.io/badge/license-Apache%202.0-purple.svg"/>
-  <img alt="Version" src="https://img.shields.io/badge/version-v1.1.5-purple"/>
-  <img alt="GitHub followers" src="https://img.shields.io/github/followers/sebastianjnuwu?style=flat&color=purple">
+  <img alt="License" src="https://img.shields.io/badge/license-Apache%202.0-AA00FF.svg?logo=apache"/>
+  <img alt="Version" src="https://img.shields.io/badge/version-v1.1.6-AA00FF?logo=github"/>
 </div>
 <div align="center"> 
 
@@ -23,8 +22,7 @@
 
 <b>Select theme:</b> Start using the theme: `Acode > Settings > Themes > Acode Purple`.
 
-<strong style="color: purple">• Ko-fi:</strong> Buy the developer a coffee [here!](https://ko-fi.com/sebastianjnuwu)
 
-<strong style="color: purple">• Sponsor:</strong> Support this project by clicking [here.](https://github.com/sponsors/sebastianjnuwu)
+<strong style="color: #AA00FF">• Sponsor:</strong> Support this project by clicking [here.](https://github.com/sponsors/sebastianjnuwu)
 
-<strong style="color: purple">• Open source:</strong> Click [here!](https://github.com/sebastianjnuwu/acode-plugins/tree/acode/packages/theme-purple)
+<strong style="color: #AA00FF">• Open source:</strong> Click [here!](https://github.com/sebastianjnuwu/acode-plugins/tree/acode/packages/theme-purple)

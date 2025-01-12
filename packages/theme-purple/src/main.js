@@ -35,13 +35,19 @@ class theme {
     themes.apply(name);
         
   };
+  
+  async destroy() {
     
+  };
+  
 };
 
-if (window.acode) {
+if (window.acode) { 
+  
+  const Instance = new theme();
+  
+  acode.setPluginInit(plugin.id, () => Instance.init());
 
-  acode.setPluginInit(plugin.id, () => new theme().init());
-
-  acode.setPluginUnmount(plugin.id, () => {});
+  acode.setPluginUnmount(plugin.id, () => Instance.destroy());
  
 };
