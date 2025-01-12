@@ -44,7 +44,7 @@ const main = (env, options) => {
 			{
 				apply: (bash) => {
 	bash.hooks.afterDone.tap('bash', async () => {
-		await exec('node .acode/zip.js');
+		await exec('node .acode/build.js');
 	});
 },
 			},
