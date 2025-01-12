@@ -1,14 +1,15 @@
 {
   "name": "materialize-intellisense",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "type": "module",
   "license": "Apache-2.0",
   "author": "sebastianjnuwu <sebastianjnuwu@gmail.com>",
   "scripts": {
-    "zip": "node .acode/zip.js",
-    "build": "webpack --mode development",
-    "release": "webpack --mode production",
-    "prettier": "prettier --write ."
+    "dev": "webpack serve",
+    "build": "webpack --mode production",
+    "publish": "node .acode/publish.js",
+    "lint": "npx @biomejs/biome lint --write",
+    "format": "npx @biomejs/biome format --write"
   },
   "devDependencies": {
     "@babel/cli": "^7.18.10",
@@ -22,7 +23,9 @@
     "jszip": "^3.10.1",
     "postcss": "^8.4.21",
     "postcss-loader": "^8.0.0",
-    "prettier": "^3.0.0",
+    "axios": "^1.7.9",
+    "webpack-dev-server": "^5.2.0",
+    "@biomejs/biome": "^1.9.4",
     "raw-loader": "^4.0.2",
     "sass": "^1.57.1",
     "sass-loader": "^16.0.0",

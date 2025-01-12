@@ -5,8 +5,8 @@
 <div align="center"> 
  <img alt="profile" src="https://raw.githubusercontent.com/sebastianjnuwu/acode-plugins/acode/packages/materialize-intellisense/icon.png" width="25%" />
   <br>
-  <img alt="License" src="https://img.shields.io/badge/License-Apache%202.0-pink"/>
-  <img alt="Version" src="https://img.shields.io/badge/Latest%20version-V1.0.2-pink"/>
+  <img alt="License" src="https://img.shields.io/badge/License-Apache%202.0-pink?logo=apache"/>
+  <img alt="Version" src="https://img.shields.io/badge/Version-v1.0.3-pink?logo=github"/>
 </div>
 
 # About

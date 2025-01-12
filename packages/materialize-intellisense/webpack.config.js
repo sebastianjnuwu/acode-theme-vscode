@@ -7,7 +7,7 @@ const main = (env, options) => {
 		mode: options.mode,
 		entry: { main: './src/main.js' },
 		output: {
-			path: resolve('./', 'build'),
+			path: resolve("./.acode", "build"),
 			filename: '[name].js',
 			chunkFilename: '[name].js',
 		},
