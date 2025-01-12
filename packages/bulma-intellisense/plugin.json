@@ -1,7 +1,7 @@
 {
   "id": "sebastianjnuwu.bulma.intellisense",
   "name": "Bulma IntelliSense",
-  "main": "build/main.js",
+  "main": "main.js",
   "version": "1.0.5",
   "readme": "readme.md",
   "minVersionCode": 289,
