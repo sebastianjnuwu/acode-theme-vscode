@@ -14,7 +14,7 @@
       <img src="https://img.shields.io/badge/License-Apache%202.0-0000FF.svg?logo=apache" alt="License Badge"/>
     </a>
     <a href="https://github.com/sebastianjnuwu/acode-plugins/blob/acode/packages/acode-eruda/package.json#L4" target="_blank">
-      <img src="https://img.shields.io/badge/Version-v1.0.4-0000FF?logo=github" alt="Version Badge"/>
+      <img src="https://img.shields.io/badge/Version-v1.0.5-0000FF?logo=github" alt="Version Badge"/>
     </a>
   </p>
   
