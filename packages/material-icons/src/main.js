@@ -124,7 +124,11 @@ class material {
 };
 
 if (window.acode) {
-  acode.setPluginInit(plugin.id, () => new material().init());
+ 
+  const Instance = new material();
+  
+  acode.setPluginInit(plugin.id, () => Instance.init());
 
-  acode.setPluginUnmount(plugin.id, () => new material().destroy());
+  acode.setPluginUnmount(plugin.id, () => Instance.destroy());
+  
 };

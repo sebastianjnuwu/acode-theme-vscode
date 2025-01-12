@@ -1,14 +1,15 @@
 {
 	"name": "acode-material-icons",
-	"version": "1.2.3",
+	"version": "1.2.4",
 	"type": "module",
 	"license": "Apache-2.0",
 	"author": "sebastianjnuwu <sebastianjnuwu@gmail.com>",
 	"scripts": {
-		"zip": "node .acode/build.js",
-		"build": "webpack",
-		"release": "webpack --mode production",
-		"prettier": "prettier --write ."
+	  "dev": "webpack serve",
+    "build": "webpack --mode production",
+    "publish": "node .acode/publish.js",
+    "lint": "npx @biomejs/biome lint --write",
+    "format": "npx @biomejs/biome format --write"
 	},
 	"devDependencies": {
 		"@babel/cli": "^7.18.10",
