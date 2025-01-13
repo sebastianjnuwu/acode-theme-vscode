@@ -70,8 +70,10 @@ class materialize {
 
 if (window.acode) {
 
-  acode.setPluginInit(plugin.id, () => new materialize().init());
+  const Instance = new materialize();
 
-  acode.setPluginUnmount(plugin.id, () => new materialize().destroy());
+  acode.setPluginInit(plugin.id, () => Instance.init());
+
+  acode.setPluginUnmount(plugin.id, () => Instance.destroy());
 
 };
