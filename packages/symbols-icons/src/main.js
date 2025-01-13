@@ -100,7 +100,10 @@ class symbols {
 };
 
 if (window.acode) {
-  acode.setPluginInit(plugin.id, () => new symbols().init());
 
-  acode.setPluginUnmount(plugin.id, () => new symbols().destroy());
+  const Instance = new symbols();
+    
+  acode.setPluginInit(plugin.id, () => Instance.init());
+
+  acode.setPluginUnmount(plugin.id, () => Instance.destroy());
 };
